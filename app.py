@@ -329,22 +329,23 @@ if __name__ == "__main__":
 
 # Custom CSS for the header and logo
 # Custom CSS for the header and logo
-st.markdown("")
-with st.expander("**Modelle und Parameter**"):
-                    st.session_state.temperature = st.slider(
-                            "temperature",
-	                        min_value=0.1,
-                            max_value=1.0,
-                            value=0.3,
-                            step=0.1,
-                            )
-                    st.session_state.top_p = st.slider(
-                            "top_p",
-                            min_value=0.1,
-                            max_value=1.0,
-                            value=0.95,
-                            step=0.05,
-                            )
+if st.session_state.logged_in:
+	st.markdown("")
+	with st.expander("**Modelle und Parameter**"):
+	                    st.session_state.temperature = st.slider(
+	                            "temperature",
+		                        min_value=0.1,
+	                            max_value=1.0,
+	                            value=0.3,
+	                            step=0.1,
+	                            )
+	                    st.session_state.top_p = st.slider(
+	                            "top_p",
+	                            min_value=0.1,
+	                            max_value=1.0,
+	                            value=0.95,
+	                            step=0.05,
+	                            )
 		
 st.markdown(
     """
