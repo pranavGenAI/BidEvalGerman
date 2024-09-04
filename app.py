@@ -101,7 +101,7 @@ def update_token_count(username, count):
 def login():
     col1, col2, col3 = st.columns([1, 1, 1])  # Create three columns with equal width
     with col2:  # Center the input fields in the middle column
-        st.write("Anmeldung")
+       
         username = st.text_input("Benutzername")
         password = st.text_input("Passwort", type="password")
         
