@@ -39,7 +39,7 @@ st.markdown(
     }
     .stTextInput, .stSelectbox, .stTextArea, .stFileUploader {
         color: white;
-        background-color: #2E2E2E;
+        background-color: #ffffff;
     }
     </style>
     """,
