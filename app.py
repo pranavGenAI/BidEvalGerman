@@ -123,20 +123,6 @@ def login():
             else:
                 st.error("Invalid username or password")
 
-    col4, col5, col6, col7, col8, col9 = st.columns([1, 1, 1, 1, 1, 1])
-    st.markdown("")
-    st.markdown("")
-    with col7:
-        st.markdown("")
-        st.markdown("")
-        st.markdown("")
-        st.write("**Entworfen und entwickelt von:**")
-    with col9:
-        st.image("https://i.ibb.co/YRH1647/Pranav-Baviskar.png", width=150)
-    with col8:
-        st.image("https://i.ibb.co/0ssNpmD/Ritwick-Das.png", width=150)
-
-
 
 def logout():
     # Clear session state on logout
