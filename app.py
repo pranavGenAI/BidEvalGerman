@@ -46,6 +46,22 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Adding the logo and other elements in the header
+st.markdown(
+    f"""
+    <header tabindex="-1" data-testid="stHeader" class="st-emotion-cache-12fmjuu ezrtsby2">
+        <div data-testid="stDecoration" id="stDecoration" class="st-emotion-cache-1dp5vir ezrtsby1"></div>
+        <div class="header-content">
+            <!-- Add the logo here -->
+            <img src="https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png" class="logo" alt="Logo">
+        
+    </header>
+
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Helper function to hash passwords
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
@@ -450,18 +466,3 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-# Adding the logo and other elements in the header
-st.markdown(
-    f"""
-    <header tabindex="-1" data-testid="stHeader" class="st-emotion-cache-12fmjuu ezrtsby2">
-        <div data-testid="stDecoration" id="stDecoration" class="st-emotion-cache-1dp5vir ezrtsby1"></div>
-        <div class="header-content">
-            <!-- Add the logo here -->
-            <img src="https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png" class="logo" alt="Logo">
-        
-    </header>
-
-    """,
-    unsafe_allow_html=True
-)
