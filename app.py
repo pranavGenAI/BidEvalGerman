@@ -335,15 +335,14 @@ if __name__ == "__main__":
     # with open('https://github.com/pranavGenAI/bidbooster/blob/475ae18b3c1f5a05a45ff983e06b025943137576/wave.css') as f:
         # css = f.read()
     # Ensure session state variables are initialized
-        if "logged_in" not in st.session_state:
-            st.session_state.logged_in = False
-        if "tokens_consumed" not in st.session_state:
-            st.session_state.tokens_consumed = 0
-        if "tokens_remaining" not in st.session_state:
-            st.session_state.tokens_remaining = 0
-        if st.session_state.logged_in:
-        else:
-            login()
+    if st.session_state.logged_in:
+        col1,col2,col3 = st.columns([10,10,1.5])
+        with col3:
+            if st.button("Logout"):
+                logout()
+        main()
+    else:
+        login()
 
 # Custom CSS for the header and logo
 # Custom CSS for the header and logo
