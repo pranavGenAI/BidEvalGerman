@@ -38,7 +38,7 @@ st.markdown(
     }
     .stTextInput, .stSelectbox, .stTextArea, .stFileUploader {
         color: white;
-        background-color: #2E2E2E;
+        background-color: #FFFFFF;
     }
     </style>
     """,
@@ -409,10 +409,10 @@ st.markdown(
 )
 
 
-# Adding the logo and other elements in the header
+# Adding the logo and other elements in the header st-emotion-cache-18ni7ap ezrtsby2
 st.markdown(
     f"""
-    <header tabindex="-1" data-testid="stHeader" class="st-emotion-cache-12fmjuu ezrtsby2">
+    <header tabindex="-1" data-testid="stHeader" class="st-emotion-cache-18ni7ap ezrtsby2">
         <div data-testid="stDecoration" id="stDecoration" class="st-emotion-cache-1dp5vir ezrtsby1"></div>
         <div class="header-content">
             <!-- Add the logo here -->
