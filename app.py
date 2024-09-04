@@ -26,36 +26,26 @@ import time
 
 st.set_page_config(page_title="KI zur Bewertung von Angebotserwiderungen ", layout="wide")
 
+st.markdown(
+    """
+    <style>
+    .stButton button {
+        background: linear-gradient(120deg,#FF007F, #A020F0 100%) !important;
+        color: white !important;
+    }
+    body {
+        color: white;
+        background-color: #1E1E1E;
+    }
+    .stTextInput, .stSelectbox, .stTextArea, .stFileUploader {
+        color: white;
+        background-color: #2E2E2E;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-
-video_html = """
-		<style>
-		#myVideo {
-		  position: fixed;
-		  right: 0;
-		  bottom: 0;
-		  min-width: 100%; 
-		  min-height: 100%;
-		  filter: brightness(30%); /* Adjust the brightness to make the video darker */
-		}
-		
-		.content {
-		  position: fixed;
-		  bottom: 0;
-		  background: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
-		  color: #f1f1f1;
-		  width: 100%;
-		  padding: 20px;
-		}
-		</style>	
-		<video autoplay muted loop id="myVideo">
-		  <source src="https://assets.mixkit.co/videos/30563/30563-720.mp4" type="video/mp4">
-		  Your browser does not support HTML5 video.
-		</video>
-		"""
-st.markdown(video_html, unsafe_allow_html=True)
-
-st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=120)
 # Helper function to hash passwords
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
@@ -404,3 +394,74 @@ if __name__ == "__main__":
             main()
         else:
             login()
+# Custom CSS for the header and logo
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Graphik:wght@400;700&display=swap');
+
+    body {
+        background-color: #f0f0f0;
+        color: black;
+        font-family: 'Graphik', sans-serif;
+    }
+    .main {
+        background-color: #f0f0f0;
+    }
+    .stApp {
+        background-color: #f0f0f0;
+    }
+    header {
+        background-color: #660094 !important;
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        height: 30px;
+        width: auto;
+        margin-right: 20px;  /* Space between logo and next item */
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+    }
+    .header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .generated-text-box {
+        border: 3px solid #A020F0; /* Thick border */
+        padding: 20px;  
+        border-radius: 10px; /* Rounded corners */
+        color: black; /* Text color */
+        background-color: #FFFFFF; /* Background color matching theme */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+# Adding the logo and other elements in the header
+st.markdown(
+    f"""
+    <header tabindex="-1" data-testid="stHeader" class="st-emotion-cache-12fmjuu ezrtsby2">
+        <div data-testid="stDecoration" id="stDecoration" class="st-emotion-cache-1dp5vir ezrtsby1"></div>
+        <div class="header-content">
+            <!-- Add the logo here -->
+            <img src="https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png" class="logo" alt="Logo">
+        
+    </header>
+
+    """,
+    unsafe_allow_html=True
+)
