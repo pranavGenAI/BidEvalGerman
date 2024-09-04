@@ -190,7 +190,7 @@ st.markdown("""
         }
     </style>
     <h3>
-        KI zur Bewertung von Angebotserwiderungen: Bewertet Angebotserwiderungen!
+        Bid Response Evaluation AI: Evaluates Bid responses!
     </h3>
 """, unsafe_allow_html=True)
 
