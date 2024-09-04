@@ -203,7 +203,7 @@ st.markdown("""
             animation: gradientAnimation 20s ease-in-out infinite;
         }
     </style>
-    <p class="animated-gradient-text">
+    <p>
         KI zur Bewertung von Angebotserwiderungen: Bewertet Angebotserwiderungen!
     </p>
 """, unsafe_allow_html=True)
@@ -367,34 +367,6 @@ def main():
 if __name__ == "__main__":
     # with open('https://github.com/pranavGenAI/bidbooster/blob/475ae18b3c1f5a05a45ff983e06b025943137576/wave.css') as f:
         # css = f.read()
-        st.markdown('''<style>
-            .stApp > header {
-            background-color: transparent;
-        }
-        @keyframes my_animation {
-            0% {background-position: 0% 0%;}
-            50% {background-position: 100% 100%;}
-            100% {background-position: 0% 0%;}
-        }
-        [data-testid=stSidebar] {
-            background: linear-gradient(360deg, #1a2631 95%, #161d29 10%);
-        }
-        div.stButton > button:first-child {
-            background:linear-gradient(45deg, #c9024b 45%, #ba0158 55%, #cd006d 70%);
-            color: white;
-            border: none;
-        }
-        div.stButton > button:hover {
-            background:linear-gradient(45deg, #ce026f 45%, #970e79 55%, #6c028d 70%);
-            background-color:#ce1126;
-        }
-        div.stButton > button:active {
-            position:relative;
-            top:3px;
-        }    
-
-
-        </style>''', unsafe_allow_html=True)
     # Ensure session state variables are initialized
         if "logged_in" not in st.session_state:
             st.session_state.logged_in = False
