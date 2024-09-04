@@ -189,9 +189,9 @@ st.markdown("""
             animation: gradientAnimation 20s ease-in-out infinite;
         }
     </style>
-    <p>
+    <h1>
         KI zur Bewertung von Angebotserwiderungen: Bewertet Angebotserwiderungen!
-    </p>
+    </h1>
 """, unsafe_allow_html=True)
 
 # This is the first API key input; no need to repeat it in the main function.
