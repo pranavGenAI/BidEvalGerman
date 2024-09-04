@@ -25,7 +25,6 @@ import hashlib
 import time
 
 st.set_page_config(page_title="KI zur Bewertung von Angebotserwiderungen ", layout="wide")
-
 st.markdown(
     """
     <style>
@@ -39,29 +38,12 @@ st.markdown(
     }
     .stTextInput, .stSelectbox, .stTextArea, .stFileUploader {
         color: white;
-        background-color: #ffffff;
+        background-color: #2E2E2E;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
-
-# Adding the logo and other elements in the header
-st.markdown(
-    f"""
-    <header tabindex="-1" data-testid="stHeader" class="st-emotion-cache-12fmjuu ezrtsby2">
-        <div data-testid="stDecoration" id="stDecoration" class="st-emotion-cache-1dp5vir ezrtsby1"></div>
-        <div class="header-content">
-            <!-- Add the logo here -->
-            <img src="https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png" class="logo" alt="Logo">
-        
-    </header>
-
-    """,
-    unsafe_allow_html=True
-)
-
-
 # Helper function to hash passwords
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
@@ -368,6 +350,8 @@ if __name__ == "__main__":
             main()
         else:
             login()
+
+# Custom CSS for the header and logo
 # Custom CSS for the header and logo
 st.markdown(
     """
@@ -424,3 +408,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
+# Adding the logo and other elements in the header
+st.markdown(
+    f"""
+    <header tabindex="-1" data-testid="stHeader" class="st-emotion-cache-12fmjuu ezrtsby2">
+        <div data-testid="stDecoration" id="stDecoration" class="st-emotion-cache-1dp5vir ezrtsby1"></div>
+        <div class="header-content">
+            <!-- Add the logo here -->
+            <img src="https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png" class="logo" alt="Logo">
+        
+    </header>
+
+    """,
+    unsafe_allow_html=True
+)
