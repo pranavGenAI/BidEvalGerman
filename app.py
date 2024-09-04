@@ -171,9 +171,9 @@ st.markdown("""
             animation: gradientAnimation 20s ease-in-out infinite;
         }
     </style>
-    <h3>
+    <h2>
         Bid Response Evaluation AI: Evaluates Bid responses!
-    </h3>
+    </h2>
 """, unsafe_allow_html=True)
 
 # This is the first API key input; no need to repeat it in the main function.
@@ -341,6 +341,7 @@ if __name__ == "__main__":
             st.session_state.tokens_consumed = 0
         if "tokens_remaining" not in st.session_state:
             st.session_state.tokens_remaining = 0
+        if st.session_state.logged_in:
         else:
             login()
 
