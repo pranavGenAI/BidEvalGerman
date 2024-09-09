@@ -255,7 +255,7 @@ def main():
         with st.spinner("Evaluating Responses based on the scoring criteria"):
             time.sleep(6)
             with st.spinner("Drafting Response..."):
-                prompt = ''' Consider yourself as bid evaluator who will evaluate bids received from different vendors basis the context provided and will generate score with explaination. I will provide you some context but before we jump into evaluation let's understand the bid. Below are the bid details for which we will be evaluating the responses: 
+                prompt = ''' Consider yourself as bid evaluator who will evaluate bids received from different vendors basis the context provided and will generate score with explaination in German langauge. I will provide you some context but before we jump into evaluation let's understand the bid. Below are the bid details for which we will be evaluating the responses: 
 	              Kaufmännische Krankenkasse - KKH RFP Scope of Work:
 			Scope of the RFP: Kaufmännische Krankenkasse (KKH) Digital Transformation Consultancy Services 
    			Objective: KKH aims to enhance its competitive edge and continue its digital transformation journey by engaging external consultancy services. The focus is on implementing cutting-edge technologies and applications to ensure operational stability and expand market position. 				              
