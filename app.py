@@ -24,6 +24,25 @@ import json
 import hashlib
 import time
 
+# Initialize session state variables
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+
+if "username" not in st.session_state:
+    st.session_state.username = ""
+
+if "tokens_remaining" not in st.session_state:
+    st.session_state.tokens_remaining = 500  # Default value or load from file
+
+if "tokens_consumed" not in st.session_state:
+    st.session_state.tokens_consumed = 0
+
+if "temperature" not in st.session_state:
+    st.session_state.temperature = 0.3  # Default value
+
+if "top_p" not in st.session_state:
+    st.session_state.top_p = 0.95  # Default value
+
 st.set_page_config(page_title="KI zur Bewertung von Angebotserwiderungen ", layout="wide")
 st.markdown(
     """
