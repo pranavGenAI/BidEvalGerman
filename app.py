@@ -256,49 +256,97 @@ def main():
             time.sleep(6)
             with st.spinner("Drafting Response..."):
                 prompt = ''' Consider yourself as bid evaluator who will evaluate bids received from different vendors basis the context provided and will generate score with explaination. I will provide you some context but before we jump into evaluation let's understand the bid. Below are the bid details for which we will be evaluating the responses: 
-	              LCBO Background
-	              The Liquor Control Board of Ontario (LCBO) is a leading global retailer and wholesaler of beverage alcohol, offering over 28,000 products from more than 80 countries. Through its Spirit of Sustainability (SoS) platform, launched in 2018, the LCBO supports Ontario’s social and environmental needs. Last year, it contributed over $16 million to community well-being and returned $2.55 billion to the province.
-	          
-	              RFP Objective
-	              LCBO seeks a consulting services provider to develop and implement a five-year ESG strategy that aligns with SoS and establishes LCBO as a sustainability leader. Requirements include:
-	          
-	              Minimum of five years in ESG strategy development and implementation.
-	              Expertise in the alcohol beverage and retail consumer goods industry, plus knowledge of government and environmental regulations.
-	          
-	              Scope of Work
-	              Phase 1: ESG Research and Analysis
-	          
-	              Conduct internal and external ESG research.
-	              Perform a double materiality assessment.
-	          
-	              Phase 2: ESG Strategy Development
-	          
-	              Design a five-year ESG strategy, roadmap, and action plan.
-	              Align strategy with LCBO’s purpose and government mandates.
-	              Innovate in ESG practices and industry collaboration.
-	              Establish environmental and social initiatives.
-	              Develop an impact measurement and reporting framework.
-	          
-	              Phase 3: ESG Strategy Execution
-	          
-	              Implement the action plan within financial projections.
-	              Ensure alignment with organizational resources.
-	              Produce LCBO ESG Annual Reports.
-	              Track progress and adapt to emerging frameworks.
-	          
-	              Phase 4: Continued Support
-	          
-	              Continue executing the ESG strategy for the remaining 36 months.
-	              Identify and implement new initiatives.
-	              Provide ad-hoc support as needed.
-	          
-	              Evaluation Criteria
-	              Company Qualifications - 5 points
-	              Case Studies/Examples - 10 points
-	              Team and Experience - 10 points
-	              Work Plan, Approach and Methodology - 30 points
-	          
-	              Now you will evaluate both responses and return the detailed scoring result with table of scores for both Responses and rationale behind the scoring in another column. Rationale should be as detailed as possible. Do not mention LCBO in your response. And keep the detailed response.
+	              Kaufmännische Krankenkasse - KKH RFP Scope of Work:
+			Scope of the RFP: Kaufmännische Krankenkasse (KKH) Digital Transformation Consultancy Services 
+   			Objective: KKH aims to enhance its competitive edge and continue its digital transformation journey by engaging external consultancy services. The focus is on implementing cutting-edge technologies and applications to ensure operational stability and expand market position. 				              
+			1. Los 1: UX/UI Design und Research
+			Anforderungen:
+			Entwicklung von benutzerzentrierten Designs.
+			Durchführung von Nutzerforschung und Usability-Tests.
+			Erstellung von Wireframes, Prototypen und Design-Systemen.
+			Berücksichtigung von Barrierefreiheit und Responsivität.
+			2. Los 2: App-Entwicklung
+			Android-Entwicklung:
+			Kenntnisse in Kotlin und Java.
+			Erfahrung mit Android SDK und App-Architekturen.
+			Integration von APIs und Backend-Systemen.
+			iOS-Entwicklung:
+			Kenntnisse in Swift und Objective-C.
+			Erfahrung mit iOS SDK und App-Architekturen.
+			Integration von APIs und Backend-Systemen.
+			Erfahrung:
+			Nachweisbare Projekte im Bereich App-Entwicklung.
+			Technische Fähigkeiten:
+			Kenntnisse in agilen Entwicklungsmethoden.
+			Kommunikations- und Schulungsfähigkeiten:
+			Fähigkeit zur Schulung von Endbenutzern und Stakeholdern.
+			3. Los 3: Softwareentwicklung
+			Anforderungen:
+			Entwicklung von Softwarelösungen gemäß den Anforderungen.
+			Erfahrung in verschiedenen Programmiersprachen (z.B. Java, C#, Python).
+			Kenntnisse in Software-Architektur und Design-Patterns.
+			4. Los 4: Test- und Qualitätsmanagement
+			Anforderungen:
+			Durchführung von Tests (funktional, automatisiert, manuell).
+			Erstellung von Testplänen und -strategien.
+			Sicherstellung der Softwarequalität und -sicherheit.
+			5. Los 5: Input- und Prozessautomationsentwicklung
+			Anforderungen:
+			Entwicklung von Automatisierungslösungen zur Effizienzsteigerung.
+			Kenntnisse in RPA (Robotic Process Automation) Tools.
+			Analyse und Optimierung bestehender Prozesse.
+			6. Los 6: Softwareentwicklung KI
+			Anforderungen:
+			Entwicklung von KI-gestützten Anwendungen.
+			Kenntnisse in Machine Learning und Data Science.
+			Erfahrung mit relevanten Frameworks (z.B. TensorFlow, PyTorch).
+			7. Los 7: Telematikinfrastruktur
+			Anforderungen:
+			Kenntnisse in der Telematikinfrastruktur im Gesundheitswesen.
+			Erfahrung mit der Integration von Systemen und Daten.
+			Sicherstellung der Datensicherheit und -integrität.
+			8. Los 8: IT-Security & IT-Forensik
+			Anforderungen:
+			Durchführung von Sicherheitsanalysen und Penetrationstests.
+			Kenntnisse in IT-Forensik und Incident Response.
+			Entwicklung von Sicherheitskonzepten und -richtlinien.
+			9. Los 9: IT-Projektmanagement und PMO-Dienstleistungen
+			Anforderungen:
+			Planung, Durchführung und Überwachung von IT-Projekten.
+			Kenntnisse in Projektmanagement-Methoden (z.B. PRINCE2, Scrum).
+			Erstellung von Projektberichten und -dokumentationen.
+			10. Los 10: Datenmigration Spezifikateur und ETL-Entwickler
+			Anforderungen:
+			Planung und Durchführung von Datenmigrationen.
+			Kenntnisse in ETL-Prozessen (Extract, Transform, Load).
+			Erfahrung mit Datenbankmanagementsystemen.
+			11. Los 11: SAP-Experte für FI, CO, FS-CM
+			Anforderungen:
+			Expertise in SAP FI (Financial Accounting) und CO (Controlling).
+			Erfahrung mit FS-CM (Financial Services Collections Management).
+			Durchführung von Implementierungs- und Optimierungsprojekten.
+			12. Los 12: Cloud
+			Anforderungen:
+			Kenntnisse in Cloud-Architekturen und -Diensten (z.B. AWS, Azure).
+			Erfahrung mit Cloud-Migration und -Management.
+			Sicherstellung der Sicherheit und Compliance in der Cloud.
+			Diese Anforderungen bieten einen umfassenden Überblick über die spezifischen Fähigkeiten und Erfahrungen, die für jedes Los erforderlich sind, um die Qualität und Effizienz der angebotenen Dienstleistungen sicherzustellen.
+
+	      
+	      		Evaluation Criteria:
+	      		1. Price (Preisbewertung): The cost of services is a primary factor, with different weighting given to price depending on the complexity and standardization of the services provided. Some lots may assess price as 100% of the evaluation if the services are highly standardized, where qualitative differences are minimal. 
+			2. Quality of Service (Leistungsqualität): 
+			Technical and Professional Qualification (Technische und Fachliche Qualifikation): This includes the depth of knowledge and experience of the proposed team, specifically related to the requirements of the specific lot. 
+			Project Approach and Methodology (Projektansatz und Methodik): The bidder's approach to managing the project, including their methodology, project management capabilities, and innovative solutions. 
+			3. Quality of the Submitted Concept (Qualität des eingereichten Konzepts): Evaluation of how well the proposal meets the RFP requirements and the innovativeness of the solutions proposed. 
+			4. Experience (Erfahrung): 
+			5. Relevant Project Experience (Relevante Projekterfahrung): Past success in similar projects, particularly within the same industry or with similar scopes, plays a crucial role. 
+			6. References (Referenzen): Quality and relevance of the references provided, showing the bidder’s capability to deliver on projects of a similar scale and complexity. 
+			7. Certifications (Zertifizierungen): Where applicable, the presence of industry-recognized certifications can be a factor, indicating the firm’s commitment to quality and adherence to industry standards. 
+			8. Submission of a Complete and Compliant Proposal (Vollständigkeit und Konformität des Angebots): Proposals must be complete and adhere strictly to the RFP’s submission guidelines. Compliance with all formal requirements, clarity, and comprehensiveness of the proposal documentation is essential. 
+			9. Innovative Value Adds (Innovative Zusatzleistungen): Proposals that include additional value beyond the basic requirements can score higher. These could be innovative uses of technology, additional services at no extra cost, or sustainability measures. 
+          
+	              Now you will evaluate both responses and return the detailed scoring result with table of scores for both Responses and rationale behind the scoring in another column. Rationale should be as detailed as possible.  And keep the detailed response.
 	              Table format: Column 1 header - Criteria; Column 2 header - Response 1 (Company name); Column 3 header -Response 2 (company name); Column 4 header- Scoring Rationale
 	              Provide another table for total score below the above table.
 	              Total score table format: Column 1 header- Company Name; Column 2 header- Total Score which should be out of 55 points
