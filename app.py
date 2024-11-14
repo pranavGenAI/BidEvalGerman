@@ -70,7 +70,7 @@ def hash_password(password):
 
 # Define users and hashed passwords for simplicity
 users = {
-    "user": hash_password("user"),
+    "User": hash_password("User"),
     "admin": hash_password("admin")
 }
 
